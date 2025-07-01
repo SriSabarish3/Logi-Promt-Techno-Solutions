@@ -1,0 +1,126 @@
+body{
+     font-family: Gilroy,arial,"Helvetica Neue",sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: #ff5200;
+    width: 100%;
+    height: 850px;
+
+}
+.top{
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+.logo{
+        height: 42px;
+        width: 160px;
+        display: flex;
+        padding-left: 90px;
+        padding-top: 20px;
+        justify-content: center;
+        padding-bottom: 20px;
+}
+.leheader{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 18px;
+            padding-left: 750px;
+            padding-bottom: 10px;
+            padding-right: 90px;
+            padding-top: 20px;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 600;
+            font-style:Sans-serif,;
+            color: azure;
+            text-align: center;
+            cursor: pointer;
+}
+.gtc{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.si{
+    border: 2px solid black;
+    background-color: black;
+    border-radius:15px;
+}
+.order{
+        display:block;
+        text-align: center;
+        height: 50px;
+        font-size: 60px;
+        font-weight:60px;
+        color: azure;
+        padding: 60px;
+}
+.locser{   
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            padding-top:40px;
+            padding-right: 10px;
+            justify-content:space-evenly ;
+            
+    
+}
+.loc,.ser{
+            border: 2px solid whitesmoke;
+            border-radius: 20px;
+            background-color: azure;
+            font-size: 20px;
+            font-weight: 550;
+            color: rgb(159, 159, 159);
+            height: 60px;
+            padding-bottom: 10px;
+            width: 350px;
+
+}
+.fdim{
+        display: flex;
+        justify-content: center;
+        column-gap: 30px;
+}
+.fd{
+     img{
+        height: 349px;
+        width: 578px;
+    }
+}
+.im{
+    img{
+        height: 349px;
+        width: 578px;
+    }
+}
+.bgim1{
+    display: flex;
+    justify-content: left;
+    img{
+    width: 250px;
+    height: 450px;
+    }
+}
+.bgim2{
+     display:flex;
+    justify-content: right;
+    img{
+    width: 250px;
+    height: 450px;
+    }
+}
+.bggg{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.bgggg{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
