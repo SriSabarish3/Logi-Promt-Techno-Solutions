@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Clicked" onclick="alert('Mouse Clicked')">
+    <input type="button" value="double Clicked" ondblclick="alert('Mouse double Clicked')">
+    <input type="button" value="over" onmouseover="alert('Mouse over')">
+    <input type="button" value="out" onmouseout="alert('Mouse out')">
+    <input type="button" value="down" onmousedown="alert('Mouse down')">
+    <input type="button" value="up" onmouseup="alert('Mouse up')">
+    <input type="button" value="wheel" onmousewheel="alert('wheel scroll')">
+    <input type="button" value="context menu" oncontextmenu="alert('context menu')">
+
+    <input type="button" value="Click me" ondblclick="hello()" class="btnclass" name="in">
+    <input id="btn" type="button" value="Click me" class="btnclass">
+    <script>
+        document.getElementById("btn").addEventListener("dblclick",hello());
+    </script>
+</body>
+</html

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        n=parseInt(prompt("Enter  numbers to find Armstrong:"))
+        arm=0;
+        t=n;
+        while(n>0){
+            rem=n%10;
+            r=rem**3;
+            arm=r+arm;
+            n=parseInt(n/10);
+        }
+        document.write(arm,"<br>")
+        document.write(t,"<br>")
+        if (t==arm) {
+            document.write(t,"Is a Armstrong")
+            
+        }
+        else{
+            document.write(t,"Is not a Armstrong")
+        }
+    </script>
+</body>
+</html>

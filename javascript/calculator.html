@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #callayout {
+        width: 400px;
+        height: 425px;
+        background-color: rgb(255, 166, 0);
+        border: 2px solid rgb(49, 49, 49);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 5px 5px 10px gray;
+        
+    }
+    #dis {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(233, 233, 233);
+        border: 1px solid black;
+        border-radius: 10px;
+        text-align: right;
+        font-size: 24px;
+        line-height: 50px;
+        cursor:text;
+    }
+    #no {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap:2px;
+        margin-top: 10px;
+    }
+    #bu{
+        width: 75px;
+        height: 75px;
+        background-color: rgb(208, 208, 208);
+        color: rgb(59, 59, 59);
+        font-size: 20px;
+        border-radius: 10px;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    #bu:hover {
+        background-color: rgb(108, 108, 108);
+        color: white;
+        transition-duration: 0.3s;
+    }
+</style>
+<body>
+    <div id="callayout">
+    <div id="dis">
+    </div>
+    <div id="no">
+        <input type="button" id="bu" value="1" onclick="display('1')">
+        <input type="button" id="bu" value="2" onclick="display('2')">
+        <input type="button" id="bu" value="3" onclick="display('3')">
+        <input type="button" id="bu" value="+" onclick="display('+')">
+        <input type="button" id="bu" value="4" onclick="display('4')"> 
+        <input type="button" id="bu" value="5" onclick="display('5')">
+        <input type="button" id="bu" value="6" onclick="display('6')">
+        <input type="button" id="bu" value="-" onclick="display('-')">
+        <input type="button" id="bu" value="7" onclick="display('7')">
+        <input type="button" id="bu" value="8" onclick="display('8')">
+        <input type="button" id="bu" value="9" onclick="display('9')">
+        <input type="button" id="bu" value="*" onclick="display('*')">
+        <input type="button" id="bu" value="C" onclick="clearDisplay()">
+        <input type="button" id="bu" value="0" onclick="display('0')">
+        <input type="button" id="bu" value="/" onclick="display('/')">
+        <input type="button" id="bu" value="=" onclick="calculate()">
+    </div>
+    </div>
+    <script>
+        function display(value) {
+            document.getElementById("dis").innerText += value;
+        }
+
+        function clearDisplay() {
+            document.getElementById("dis").innerText = '';
+        }
+
+        function calculate() {
+            let expression = document.getElementById("dis").innerText;
+            try {
+                let result = eval(expression);
+                document.getElementById("dis").innerText = result;
+            } catch (error) {
+                document.getElementById("dis").innerText = 'Error';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="img1.jpg"  id="i" alt="image"><br>
+    <input type="button" value="apple" onclick="c()">
+    <input type="button" value="banana" onclick="ch()">
+    <input type="button" value="grapes" onclick="cha()">
+    <input type="button" value="mango" onclick="chan()">
+    <script>
+        function c() {
+            var img = document.getElementById("i");
+            i.setAttribute("src", "download.jpg");
+        }
+        function ch() {
+            var img = document.getElementById("i");
+            i.setAttribute("src", "download-1.jpg");
+        }
+        function cha() {
+            var img = document.getElementById("i");
+            i.setAttribute("src", "download-2.jpg");
+        }
+        function chan() {
+            var img = document.getElementById("i");
+            i.setAttribute("src","mango.jpg");
+        }
+        document.getElementById("i").setAttribute("height", "300px");
+        document.getElementById("i").setAttribute("width", "500px");
+    </script>
+</body>
+</html>

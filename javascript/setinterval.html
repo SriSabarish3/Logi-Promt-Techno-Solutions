@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d"></div>
+    <script>
+        var c=1;
+        b=document.getElementById("d")
+        var s=setInterval(function(){
+            b.innerHTML=c;
+            c++;
+            if(c==11){
+                clearInterval(s);
+            }
+        },1000);
+    </script>
+</body>
+</html>

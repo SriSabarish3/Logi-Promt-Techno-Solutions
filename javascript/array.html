@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=[];
+        arr[0]=10;
+        arr[1]=80
+        console.log(arr)
+        a=[[1,2,3,4],[7,8,9,0],[12,4,5,6]]
+        console.log(a[0][1])
+        md=[[1,2,3,[0,4,5]],[10,20,30],[6,40,55]]
+        console.log(md[0][3][1])
+        let person={"row1":{"name":"ammu","place":"tvm","age":5},
+                    "row2":{"name":"ammuss","place":"tvm","age":5}}
+        
+        document.write(person["row1"]["name"],"<br>");
+        let kid='{"name":"ram","age":3}'
+        console.log(typeof kid)
+       k= JSON.parse(kid)
+       console.log(typeof k)
+       g=JSON.stringify(k);
+       console.log(typeof g)
+
+    let fruit=["banana","apple","mango"]
+    fruit.push("grapes");
+        document.write(fruit,"<br>")
+    fruit.unshift("pineapple")
+            document.write(fruit,"<br>")
+
+    fruit.pop();
+            document.write(fruit,"<br>")
+fruit.shift()
+        document.write(fruit,"<br>")
+fruit.splice(1,2,"watermelon","guava")
+        document.write(fruit,"<br>")
+        fruit.reverse();
+                document.write(fruit,"<br>")
+fruit.sort()
+        document.write(fruit,"<br>")
+n=[100,120,55,2]
+n.sort(function(x,y){
+    return x-y
+});
+        document.write(n,"<br>")
+
+n.reverse();
+        document.write(n,"<br>")
+
+
+
+
+    </script>
+</body>
+</html>

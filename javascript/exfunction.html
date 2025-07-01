@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function welcome(name){
+        //     return "Welcome"+" "+name
+
+        // }
+        // a=prompt("Enter your Name:")
+        // r=welcome(a);
+        // document.write(r,"<br>")
+        // function calculate(operation,num1,num2) {
+           
+        //     switch (operation) {
+        //         case '+':
+        //             return num1 + num2;
+        //         case '-':
+        //             return num1 - num2;
+        //         case '*':
+        //             return num1 * num2;
+        //         default:
+        //             return 'Invalid operation';
+        //     }
+        // }
+        // n1=parseInt(prompt("Enter value to do operation:"))
+        // n2=parseInt(prompt("Enter value to do operation:"))
+        // o=prompt("Enter operation:add subract multiply")
+        // b=calculate(o,n1,n2);
+        // document.write(b)
+        function sum(c,a,b){
+            summ=a+b;
+            c(sum)
+        }
+        function dis(sum){
+            document.write(summ)
+        }
+        y=parseInt(prompt("Enter 1st value to do sum:"))
+        d=parseInt(prompt("Enter 2nd value to do sum:"))
+        sum(dis,y,d);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Pen{
+            constructor(color,price){
+                this.color = color;
+                this.price = price;
+            }
+            write(){
+                document.write("This is a " + this.color + " pen and it costs " + this.price + "<br>");
+            }
+        }
+        let pen1=new Pen("blue",10)
+        pen1.write()
+        let pen2=new Pen("red",20)
+        pen2.write()
+    </script> 
+</body>
+</html>

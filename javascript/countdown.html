@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="display"></div>
+    <script>
+         var display=document.getElementById("display");
+        display.innerHTML="Countdown begins";
+        setTimeout(function() {
+            var count=10;
+            var d=setInterval(function() {
+                display.innerHTML=count;
+                count--;
+                if (count==0) {
+                    clearInterval(d);
+                    setTimeout(function() {
+                        display.innerHTML="Let's start";
+                    }, 1000);
+                }
+            }, 1000);
+        }, 1000);
+    </script>
+</body>
+</html>

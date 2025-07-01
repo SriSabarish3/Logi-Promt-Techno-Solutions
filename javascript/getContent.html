@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p">hello</p>
+    <div id="d">welcome</div>
+    <input type="button" value="switch" onclick="swap()">
+    <script>
+        function swap(){
+            p=document.getElementById("p");
+            d=document.getElementById("d");
+            temp=p.innerHTML;
+            p.innerHTML=d.innerHTML;
+            d.innerHTML=temp;
+        }
+    </script>
+</body>
+</html>

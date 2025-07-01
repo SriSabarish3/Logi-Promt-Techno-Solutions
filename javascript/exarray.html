@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruits=[];
+        fruits[0]="Apple";
+        fruits[1]="Orange";
+        fruits[2]="Banana";
+        document.write(fruits,"<br>")
+        console.log(fruits)
+        fruit=[["kiwi","mango","grape","pineappla"],["Watermelon","Strawberry","cherries","Papaya"],["Gooseberry","Date","Olive","Tangerine"]]
+        console.log(fruit[0][1])
+        document.write(fruit,"<br>")
+        fruitss=[["grape","orange","apple",["McIntosh","Red Delicious","Gala"]],["Watermelon","Strawberry","cherries"],["Date","Olive","Tangerine"]]
+        console.log(fruitss[0][3])
+        let firstyear={"stu1":{"name":"sri","place":"kuz","age":21},
+                        "stu2":{"name":"beryl","place":"ngl","age":20},
+                        "stu3":{"name":"albin","place":"ngl","age":21},
+                        "stu4":{"name":"ashik","place":"ngl","age":21}}
+        document.write(firstyear["stu1"]["name"]);
+        let c='{"name":"ram","age":3}'
+        console.log(typeof c)
+        d=JSON.parse(c)
+        console.log(typeof d)
+        f=JSON.stringify(d);
+        console.log(typeof f)
+    </script>
+</body>
+</html>

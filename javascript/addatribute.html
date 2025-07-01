@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myclass{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- <input type="button" value="click"id="btn"onclick="add()">
+    <script>
+        function add() {
+            var newattribute=document.createAttribute("class")
+            newattribute.value="myclass";
+            document.getElementById("n").setAttributeNode(newattribute);
+        }
+        
+
+    </script> -->
+    <!-- <img src="downloadd.jpg" height="300px" width="300px" id="i">
+    <input type="button" id="btn" value="Change" onclick="change()">
+    <script>
+        function change(){
+            document.getElementById("i").setAttribute("src","img1.jpg")
+        }
+    </script> -->
+    <input type="button" value="Add" id="ii" onclick="add()">
+    <input type="button" value="Add Image" id="i" onclick="aadd()">
+     <input type="button" value="Remove" id="ff" onclick="remove()">
+    <script>
+         var i=document.createElement("img");
+        var heading=document.createElement("h1")
+        function add(){
+        heading.innerHTML="welcome.....Element Added"
+        document.body.appendChild(heading);
+        }
+        function remove(){
+            heading.remove();
+            document.getElementById("n").remove();
+        }
+        function aadd() {
+            i.setAttribute("src","downloadd.jpg");
+            i.setAttribute("id","n");
+            i.setAttribute("alt","Image");
+            document.getElementById("n");
+            document.body.appendChild(i);
+            // var newattribute=document.createAttribute("src")
+            // newattribute.value="img1.jpg";
+            // document.getElementById("n").setAttributeNode(newattribute);
+        }
+
+    </script>
+
+
+</body>
+</html>
